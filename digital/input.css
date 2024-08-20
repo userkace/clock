@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'segment';
+  src: url('./digital/segment-display.ttf') format('truetype');
+}
+
+* {
+  user-select: none;
+}
+
+body {
+  font-family: 'segment', 'Courier New', Courier, monospace;
+  text-align: center;
+}

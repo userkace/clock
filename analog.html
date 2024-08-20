@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="analog.css">
+</head>
+
+<body class="bg-neutral-900">
+
+    <main id="clock" class="bg-neutral-600 drop-shadow-2xl">
+
+        <div id="clock-face" class="bg-neutral-800 rounded-full border-neutral-700 border-8">
+            <div id="glow"
+                class="h-10 w-10 rounded-full bg-neutral-700 shadow-orange-400 shadow-2xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div id="hour-hand" class="bg-orange-300 rounded-full"></div>
+            <div id="minute-hand" class="bg-orange-100 rounded-full"></div>
+            <div id="second-hand" class="bg-red-500 rounded-full"></div>
+            <div id="watch-crown" title="Use scroll wheel to adjust time."
+                class="h-10 w-6 bg-neutral-600 drop-shadow-2xl rounded-lg border-neutral-700 border-4 -z-10 cursor-help">
+            </div>
+            <div id="glow"
+                class="h-5 w-5 rounded-full bg-neutral-600 shadow-orange-400 shadow-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            </div>
+        </div>
+
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+        <div class="hour-mark"></div>
+
+        <button id="format-info"
+            class="bg-neutral-700 hover:bg-neutral-800 mt-4 text-white font-bold py-2 px-4 rounded-lg cursor-help"
+            title="Use scroll wheel to adjust time.">
+            Analog Clock</button>
+    </main>
+
+    <script src="analog.js"></script>
+</body>
+
+</html>

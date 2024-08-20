@@ -1,0 +1,30 @@
+# Tailwind CSS
+.tailwind-cache/
+.tailwind.config.js
+postcss.config.js
+autoprefixer.config.js
+
+# Build artifacts
+dist/
+public/build/
+public/static/
+
+# Node.js
+node_modules/
+
+# Editor files
+.vscode/
+.editorconfig
+.eslintignore
+.eslintrc.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Miscellaneous
+*.log
+*.tmp
+*.bak
