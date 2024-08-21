@@ -668,6 +668,10 @@ video {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -678,8 +682,17 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-0\.5 {
+  padding-bottom: 0.125rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.text-orange-200 {
+  --tw-text-opacity: 1;
+  color: rgb(254 215 170 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -712,7 +725,7 @@ video {
 @font-face {
   font-family: 'segment';
 
-  src: url('./digital/segment-display.ttf') format('truetype');
+  src: url('./analog/segment-display.ttf') format('truetype');
 }
 
 * {
@@ -746,14 +759,27 @@ body {
 }
 
 #hour-hand,
-#minute-hand,
-#second-hand {
+ #minute-hand,
+ #second-hand {
   position: absolute;
   height: 35%;
   width: 10px;
   top: 50%;
   left: 50%;
   transform-origin: calc(50%) calc(50% - 50%);
+}
+
+#date-window {
+  position: absolute;
+  top: 37.375%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  rotate: 180deg;
+  min-width: 2.5em;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 #minute-hand {

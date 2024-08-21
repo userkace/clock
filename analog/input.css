@@ -1,127 +1,139 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
 
-@font-face {
-     font-family: 'segment';
-     src: url('./digital/segment-display.ttf') format('truetype');
-}
+ @font-face {
+      font-family: 'segment';
+      src: url('./analog/segment-display.ttf') format('truetype');
+ }
 
-* {
-     user-select: none;
-}
+ * {
+      user-select: none;
+ }
 
-body {
-     font-family: 'segment', 'Courier New', Courier, monospace;
-     text-align: center;
-}
+ body {
+      font-family: 'segment', 'Courier New', Courier, monospace;
+      text-align: center;
+ }
 
-#clock {
-     width: 400px;
-     height: 400px;
-     border-radius: 50%;
-     background-color: #f0f0f0;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-}
+ #clock {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background-color: #f0f0f0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+ }
 
-#clock-face {
-     position: relative;
-     width: 100%;
-     height: 100%;
-     rotate: 180deg;
-}
+ #clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      rotate: 180deg;
+ }
 
-#hour-hand,
-#minute-hand,
-#second-hand {
-     position: absolute;
-     height: 35%;
-     width: 10px;
-     top: 50%;
-     left: 50%;
-     transform-origin: calc(50%) calc(50% - 50%);
-}
+ #hour-hand,
+ #minute-hand,
+ #second-hand {
+      position: absolute;
+      height: 35%;
+      width: 10px;
+      top: 50%;
+      left: 50%;
+      transform-origin: calc(50%) calc(50% - 50%);
+ }
+
+ #date-window {
+      position: absolute;
+      top: 37.375%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 10px;
+      rotate: 180deg;
+      min-width: 2.5em;
+      box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+ }
 
 
+ #minute-hand {
+      width: 5px;
+      height: 45%;
+ }
 
-#minute-hand {
-     width: 5px;
-     height: 45%;
-}
-
-#second-hand {
-     height: 48%;
-     width: 2px;
-}
+ #second-hand {
+      height: 48%;
+      width: 2px;
+ }
 
 
-#watch-crown {
-     position: absolute;
-     top: 50%;
-     right: 101.75%;
-     /* adjust to your desired position */
-     transform: translateY(-50%);
-}
+ #watch-crown {
+      position: absolute;
+      top: 50%;
+      right: 101.75%;
+      /* adjust to your desired position */
+      transform: translateY(-50%);
+ }
 
-.hour-mark {
-     position: absolute;
-     width: 10px;
-     height: 10px;
-     border-radius: 50%;
-     background-color: #fb923c;
-     top: 3.5%;
-     left: calc(48.75%);
-     transform-origin: 40% 185px;
-}
+ .hour-mark {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fb923c;
+      top: 3.5%;
+      left: calc(48.75%);
+      transform-origin: 40% 185px;
+ }
 
-.hour-mark:nth-child(1) {
-     transform: rotate(0deg);
-}
+ .hour-mark:nth-child(1) {
+      transform: rotate(0deg);
+ }
 
-.hour-mark:nth-child(2) {
-     transform: rotate(30deg);
-}
+ .hour-mark:nth-child(2) {
+      transform: rotate(30deg);
+ }
 
-.hour-mark:nth-child(3) {
-     transform: rotate(60deg);
-}
+ .hour-mark:nth-child(3) {
+      transform: rotate(60deg);
+ }
 
-.hour-mark:nth-child(4) {
-     transform: rotate(90deg);
-}
+ .hour-mark:nth-child(4) {
+      transform: rotate(90deg);
+ }
 
-.hour-mark:nth-child(5) {
-     transform: rotate(120deg);
-}
+ .hour-mark:nth-child(5) {
+      transform: rotate(120deg);
+ }
 
-.hour-mark:nth-child(6) {
-     transform: rotate(150deg);
-}
+ .hour-mark:nth-child(6) {
+      transform: rotate(150deg);
+ }
 
-.hour-mark:nth-child(7) {
-     transform: rotate(180deg);
-}
+ .hour-mark:nth-child(7) {
+      transform: rotate(180deg);
+ }
 
-.hour-mark:nth-child(8) {
-     transform: rotate(210deg);
-}
+ .hour-mark:nth-child(8) {
+      transform: rotate(210deg);
+ }
 
-.hour-mark:nth-child(9) {
-     transform: rotate(240deg);
-}
+ .hour-mark:nth-child(9) {
+      transform: rotate(240deg);
+ }
 
-.hour-mark:nth-child(10) {
-     transform: rotate(270deg);
-}
+ .hour-mark:nth-child(10) {
+      transform: rotate(270deg);
+ }
 
-.hour-mark:nth-child(11) {
-     transform: rotate(300deg);
-}
+ .hour-mark:nth-child(11) {
+      transform: rotate(300deg);
+ }
 
-.hour-mark:nth-child(12) {
-     transform: rotate(330deg);
-}
+ .hour-mark:nth-child(12) {
+      transform: rotate(330deg);
+ }
