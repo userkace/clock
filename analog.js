@@ -45,9 +45,9 @@ let hasScrolled = false;
 function handleScroll(event) {
      hasScrolled = true;
      if (event.deltaY > 0) {
-          currentTime.setSeconds(currentTime.getSeconds() + 60);
+          currentTime.setSeconds(currentTime.getSeconds() + 1);
      } else if (event.deltaY < 0) {
-          currentTime.setSeconds(currentTime.getSeconds() - 120);
+          currentTime.setSeconds(currentTime.getSeconds() - 2);
      }
      updateClockAdjusted(currentTime);
 }
